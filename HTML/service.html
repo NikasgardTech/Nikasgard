@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKASGARD | All Projects</title>
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <img src="../images/logo-removebg-preview.png" alt="NIKASGARD Icon" class="nav-icon">
+            <span class="logo-text">NIKASGARD</span>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+           <!-- <li><a href="about.html">ABOUT</a></li>-->
+            <li><a href="service.html" class="active">SERVICE</a></li>
+            <li><a href="website.html">WEBSITES</a></li>
+            <li><a href="logo.html">LOGO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main class="portfolio-container">
+        <div class="portfolio-hero">
+            <h1 class="hero-title">ALL MASTERPIECES</h1>
+            <p class="hero-description">Explore our complete collection of websites, logo designs, branding projects, and more!</p>
+            <div class="yellow-underline"></div>
+        </div>
+
+        <div class="category-links">
+            <a href="website.html" class="category-btn">WEBSITES</a>
+            <a href="logo.html" class="category-btn">LOGO DESIGNS</a>
+           
+        </div>
+
+        <div class="projects-grid">
+            <!-- Website Project 1 -->
+            <div class="project-card" data-category="website" data-id="1">
+                <div class="card-image">
+                    <img src="../images/nikacinemas world.png" alt="Cinema World">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>NIKA'S CINEMA</h4>
+                     <a href="https://nikascinemaworld.netlify.app/"><button class="view-details-btn">VIEW DETAILS</button></a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Nika's Cinema</h3>
+                    <div class="card-subtitle">Website</div>
+                    <p class="card-description">Modern movie showcase with API integration.</p>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Project 2 -->
+            <div class="project-card" data-category="logo" data-id="2">
+                <div class="card-image">
+                    <img src="../logo/real estate.jpg" alt="Real Estate Logo">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>REAL ESTATE</h4>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Real Estate</h3>
+                    <div class="card-subtitle">Logo Design</div>
+                    <p class="card-description">Modern minimalistic logo for property ventures.</p>
+                    <div class="card-tags">
+                        <span class="tag">Logo</span>
+                        <span class="tag">Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Project 3 -->
+            <div class="project-card" data-category="website" data-id="3">
+                <div class="card-image">
+                    <img src="../images/real esate.jpeg" alt="Real Estate">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>REAL ESTATE PORTAL</h4>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Real Estate Portal</h3>
+                    <div class="card-subtitle">Website</div>
+                    <p class="card-description">Property search with maps integration.</p>
+                    <div class="card-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Project 4 -->
+            <div class="project-card" data-category="logo" data-id="4">
+                <div class="card-image">
+                    <img src="../logo/shopsync.jpg" alt="ShopSync">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>SHOPSYNC</h4>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>ShopSync</h3>
+                    <div class="card-subtitle">Logo Design</div>
+                    <p class="card-description">Tech-focused logo for retail synchronization.</p>
+                    <div class="card-tags">
+                        <span class="tag">Logo</span>
+                        <span class="tag">Tech</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Project 5 -->
+            <div class="project-card" data-category="website" data-id="5">
+                <div class="card-image">
+                    <img src="../images/ecommerce website.jpeg" alt="E-Commerce">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>E-COMMERCE</h4>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>E-Commerce</h3>
+                    <div class="card-subtitle">Website</div>
+                    <p class="card-description">Full-stack shopping with payment integration.</p>
+                    <div class="card-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Project 6 -->
+            <div class="project-card" data-category="logo" data-id="6">
+                <div class="card-image">
+                    <img src="../logo/bloodhub.jpg" alt="BloodHub">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>BLOODHUB</h4>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>BloodHub</h3>
+                    <div class="card-subtitle">Logo Design</div>
+                    <p class="card-description">Healthcare and donation platform identity.</p>
+                    <div class="card-tags">
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Logo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-animated-bg">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="footer-floating"></div>
+
+        <div class="footer-container">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo-container">
+                    <img src="../images/logo-removebg-preview.png" alt="NIKASGARD" class="footer-nav-icon">
+                    <span class="footer-logo-text">NIKASGARD</span>
+                </div>
+                <div class="journey-section">
+                    <h3 class="journey-title">NAMASTE!</h3>
+                    <p class="journey-text">We are an end-to-end Web Development Company in India that breathes Creativity.</p>
+                  <!--  <a href="about.html" class="main-btn" style="margin-top: 15px; display: inline-block; padding: 10px 20px; font-size: 0.9rem;">Read More</a> -->
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">All Projects</a></li>
+                    <li><a href="website.html">Websites</a></li>
+                    <li><a href="logo.html">Logo Designs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h4>We Do Creative</h4>
+                <ul>
+                    <li><a href="website.html">Web Development</a></li>
+                    <li><a href="logo.html">Logo Design</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 style="color: var(--primary); font-size: 1.1rem; font-weight: 900; margin-bottom: 25px;">Reach Us</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">PHONE</span>
+                            <span class="contact-value">+91 63694 07214</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">EMAIL</span>
+                            <span class="contact-value">nikasgardtech@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">LOCATION</span>
+                            <span class="contact-value">Chennai, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">Copyright © 2026 <span>NIKASGARD</span>. All rights reserved.</div>
+            <div class="footer-policies">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/modal.js"></script>
+</body>
+</html>

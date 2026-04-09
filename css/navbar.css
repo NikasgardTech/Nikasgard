@@ -1,0 +1,109 @@
+/* Navigation Bar - NIKASGARD */
+:root {
+    --primary: #f6e01a;
+    --bg: #000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(246, 224, 26, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 35px;
+    height: 45px;
+    filter: drop-shadow(0 0 5px rgba(246, 224, 26, 0.3));
+}
+
+.logo-text {
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(246, 224, 26, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    background: var(--primary);
+    color: black;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(246, 224, 26, 0.3);
+}
+
+nav ul li a.active {
+    background: var(--primary);
+    color: black;
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(246, 224, 26, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 3%;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+}
